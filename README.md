@@ -2,7 +2,7 @@
 Encryption / decryption of images with AES in Python 3 (CBC and ECB mode supported)
 The same as the [user163](https://github.com/user163/image-encryption), but with some more tweeks, like:
 
- - option to select the encryption / decryption method
+ - option to select the encryption / decryption method from AES.MODE_CBC or AES.MODE_ECB
 
  - encrypted / decrypted file is saved
   
@@ -18,14 +18,6 @@ The same as the [user163](https://github.com/user163/image-encryption), but with
 
 - numpy (s. https://numpy.org/doc/)
 
-### Configuration
-
-The following settings are possible in PyImgEnc.py:
-
-- Set the mode in section '# Set mode': AES.MODE_CBC or AES.MODE_ECB.
-
-- Set the file path of the image to be encrypted in section '# Load original image': If the image is in the same directory as PyImgEnc.py, only the filename is required, e.g. topsecret.jpg.
-
 ### Image formats
 
 - The images to be encrypted can be in one of the common formats (jpg, bmp, etc.). 
@@ -34,7 +26,7 @@ The following settings are possible in PyImgEnc.py:
 
 ### Program execution and flow
 
-- Start the program under Windows / Mac in the comand prompt / terminal with: py pyimgenc.py 
+- Start the program under Windows / Mac in the comand prompt / terminal with: python3 main.py (or just python, but ensure it is +v3)
 
 - Once the program is started, select the desired options. The images to encrypt / decrypt are presented. To proceed, press ENTER, with the presented window selected.
 
